@@ -11,16 +11,22 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 	<body>
-	<div class="container">
-
+		<div class="container">
+<!-- 
 		<h1 class="pull-left">
 			<?php 
-				foreach ($task as $value) {
-					echo $value->name."</br>";
-					echo $value->email;
-				}
+				// foreach ($task as $value) {
+				// 	echo $value->name."</br>";
+				// 	echo $value->email;
+				// }
 			?>
-			</h1>
+			</h1> -->
+	Submit your name
+	<form method="POST" action="names">
+		<input name="name">
+		<button type="submit">Submit</button>
+	</form>
 	</div>
 	</body>
 </html>
+
